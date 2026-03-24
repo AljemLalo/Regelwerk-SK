@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Schatten-Kartell Regelkatalog</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #d4af37;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    background: radial-gradient(circle, rgba(255,215,0,0.05) 0%, transparent 70%);
+    animation: smoke 20s linear infinite;
+    z-index: 0;
+}
+
+@keyframes smoke {
+    0% { transform: translate(0,0) rotate(0deg); }
+    50% { transform: translate(40px, -40px) rotate(180deg); }
+    100% { transform: translate(0,0) rotate(360deg); }
+}
+
+.container {
+    position: relative;
+    max-width: 950px;
+    margin: 60px auto;
+    padding: 50px;
+    border: 2px solid #d4af37;
+    border-radius: 12px;
+    background: rgba(0,0,0,0.9);
+    box-shadow: 
+        0 0 30px rgba(255,215,0,0.6),
+        inset 0 0 25px rgba(255,215,0,0.2);
+    z-index: 1;
+}
+
+.container::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 520px;
+    height: 520px;
+    background: url('logo.png') no-repeat center;
+    background-size: contain;
+    transform: translate(-50%, -50%);
+    opacity: 0.06;
+    z-index: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.6em;
+    color: #ffd700;
+    text-shadow: 0 0 15px #ffd700, 0 0 40px #d4af37;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-top: 35px;
+    color: #ffd700;
+    text-shadow: 0 0 10px #d4af37;
+}
+
+h3 {
+    margin-top: 20px;
+    color: #e6c96b;
+}
+
+p {
+    line-height: 1.7;
+    color: #f5d97a;
+}
+
+.section {
+    margin-bottom: 25px;
+    padding: 15px;
+    border-left: 3px solid #ffd700;
+    box-shadow: -5px 0 12px rgba(255,215,0,0.25);
+}
+
+.paragraph {
+    margin-top: 15px;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255,215,0,0.2);
+}
+
+.paragraph strong {
+    color: #ffd700;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.9em;
+    color: #a68c2d;
+    opacity: 0.7;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Regelkatalog des Schatten-Kartells</h1>
+
+<h2>Präambel</h2>
+<div class="section">
+<p>Im Schatten entsteht Macht.<br>
+Das Schattenkartell ist mehr als eine Organisation – es ist ein Bund aus Loyalität, Disziplin und absoluter Verschwiegenheit.</p>
+
+<p>Wer in den Schatten tritt, verpflichtet sich dazu, die Interessen der Bruderschaft über die eigenen zu stellen. Verrat wird nicht vergessen, Loyalität jedoch belohnt.</p>
+
+<p>Jedes Mitglied ist Teil der Dunkelheit – und trägt Verantwortung für den Ruf und die Stärke des Kartells.</p>
+</div>
+
+<h2>Abschnitt I – Grundprinzipien der Schatten</h2>
+
+<div class="section">
+
+<div class="paragraph">
+<h3>§1 - Bindung an den Kodex</h3>
+<p>Mit dem <strong>Eintritt</strong> in das <strong>Schattenkartell</strong> verpflichtet sich jedes Mitglied zur vollständigen <strong>Einhaltung</strong> dieses <strong>Kodex</strong> sowie sämtlicher <strong>Fraktionsregelwerke</strong>.</p>
+</div>
+
+<div class="paragraph">
+<h3>§2 - Gesetz der Stille</h3>
+<p><strong>Alle internen Informationen, Pläne, Gespräche und Aktivitäten</strong> unterliegen der absoluten Verschwiegenheit.<br>
+Was im Schatten geschieht, bleibt im Schatten.</p>
+</div>
+
+<div class="paragraph">
+<h3>§3 - Hierarchie des Schattens</h3>
+<p>Den <strong>Anweisungen</strong> des <strong>Schattenrats</strong> sowie aller <strong>ranghöheren Mitglieder</strong> ist unverzüglich und ohne Widerrede Folge zu leisten.</p>
+</div>
+
+<div class="paragraph">
+<h3>§4 - Verbot eigenmächtiger Operationen</h3>
+<p><strong>Eigenmächtige Aktionen</strong>, <strong>Operationen</strong> oder <strong>Konflikte</strong> ohne Zustimmung der Führung sind streng <strong>untersagt</strong>.</p>
+</div>
+
+<div class="paragraph">
+<h3>§5 - Loyalität und Respekt</h3>
+<p>Mitglieder begegnen einander mit <strong>Respekt</strong>, <strong>Disziplin</strong> und <strong>Loyalität</strong>.<br>
+Interne Konflikte werden niemals öffentlich ausgetragen.</p>
+</div>
+
+<div class="paragraph">
+<h3>§6 - Schutz des Anwesens</h3>
+<p>Das Anwesen des Schattenkartells gilt als heiliger Boden.<br>
+Unnötige <strong>Gewalt</strong> oder <strong>Chaos</strong> innerhalb dieses Bereichs wird nicht toleriert.</p>
+</div>
+
+</div>
+
+<div class="footer">
+© Aljem Lalo
+</div>
+
+</div>
+
+</body>
+</html>
